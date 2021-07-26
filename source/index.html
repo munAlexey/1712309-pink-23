@@ -1,12 +1,228 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-
+  <body class="page-body">
+    <style>
+      body{
+        background-color: bisque;
+      }
+    </style>
+    <header class="header">
+      <nav class="header-nav">
+        <div class="header-nav__logo">
+          <img src="img/pink.svg" width="74" height="23" alt="Логотип-Пинк">
+        </div>
+        <button class="header-nav__toggle" type="button">
+          <span>Открыть меню</span>
+        </button>
+        <ul class="site-nav__list">
+          <li class="site-nav__item"><a href="index.html">главная</a></li>
+          <li class="site-nav__item"><a href="#">фотографии</a></li>
+          <li class="site-nav__item"><a href="#">конкурс</a></li>
+          <li class="site-nav__item"><a href="#">html academy</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <h1 class="visually-hidden">Приложение pink</h1>
+      <div class="main-slide">
+        <strong class="main-slide__slogan">
+          Взгляните на жизнь <br>
+          иначе!
+        </strong>
+        <button class="button" type="button">
+          <span>Скачать приложение</span>
+        </button>
+          <ul class="main-slide__platforms">
+            <li class="main-slide__platform-item">
+              <img src="img/apple-logo.svg" width="47" height="56" alt="Apple">
+            </li>
+            <li class="main-slide__platform-item">
+              <img src="img/android-logo.svg" width="43" height="47" alt="Android">
+            </li>
+            <li class="main-slide__platform-item">
+              <img src="img/microsoft-logo.svg" width="44" height="41" alt="Microsoft">
+            </li>
+          </ul>
+          <p class="main-slide__text">
+            Доступно для iPhone, iPad, Android, <br>
+            Windows Phone, OS X, Windows 8
+          </p>
+      </div>
+      <section class="offer">
+        <div class="offer__title">
+          <b class="offer__title-text">
+            Устали от серости <br>
+            мегаполиса?
+          </b>
+          <b class="offer__title-text">
+            Нам есть, что вам <br>
+            предложить!
+          </b>
+        </div>
+        <ul class="offer__list">
+          <li class="offer__item">
+            <p class="offer__item-title">
+              Поднимает настроение
+            </p>
+            <p class="offer__item-subtitle">
+              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+            </p>
+          </li>
+          <li class="offer__item">
+            <p class="offer__item-title">
+              Меняет мир вокруг
+            </p>
+            <p class="offer__item-subtitle">
+              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+            </p>
+          </li>
+          <li class="offer__item">
+            <p class="offer__item-title">
+              Заводит новых друзей
+            </p>
+            <p class="offer__item-subtitle">
+              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+            </p>
+          </li>
+        </ul>
+        <img class="offer__iphone--drop-shadow" src="img/iphone.png" width="157" height="320" alt="iphone">
+      </section>
+      <section class="comments">
+        <h2 class="visually-hidden">
+          Коментарии
+        </h2>
+        <div class="comments-wrapper">
+          <ul class="comments__list">
+            <li class="comments__item">
+              <blockquote class="user-block">
+                <cite class="user-name">Николай Петров</cite>
+                <p class="user-comments">
+                  «Это приложение перевернуло мой мир
+                  и позволило по-новому взглянуть на
+                  привычные серые вещи! А еще я
+                  познакомился со своей будущей женой
+                  в комментариях к выложенной
+                  фотографии!»
+                </p>
+              </blockquote>
+            </li>
+          </ul>
+          <ul class="toggles">
+            <li class="toggles-item">
+              <button class="toggles-button" type="button">
+                slide1
+              </button>
+            </li>
+            <li class="toggles-item">
+              <button class="toggles-button" type="button">
+                slide2
+              </button>
+            </li>
+            <li class="toggles-item">
+              <button class="toggles-button" type="button">
+                slide3
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="price-list">
+        <h2 class="visually-hidden">
+          Тарифные планы
+        </h2>
+        <div>
+          <table class="prices__table">
+            <caption class="price-list__caption">
+              <dl>
+                <dt>стандарт</dt>
+                <dd>3,99 USD</dd>
+              </dl>
+            </caption>
+            <tr>
+              <td class="prices__item">Розовый фильтр</td>
+            </tr>
+            <tr>
+              <td class="prices__item">Смайлики</td>
+            </tr>
+            <tr>
+            <td class="prices__item">Комментарии</td>
+          </tr>
+          </table>
+          <ul class="toggles">
+            <li class="toggles-item">
+              <button class="toggles-button" type="button">
+                slide1
+              </button>
+            </li>
+            <li class="toggles-item">
+              <button class="toggles-button" type="button">
+                slide2
+              </button>
+            </li>
+            <li class="toggles-item">
+              <button class="toggles-button" type="button">
+                slide3
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="contacts">
+        <h2 class="contacts__title">Остались вопросы? <br>
+          Свяжитесь с нами!
+        </h2>
+        <!-- "Здесь элементы без блока получились, блока contact нет" не понял эту часть
+        Спасибо за ревью))) -->
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <p class="contacts__title">Звоните:</p>
+            <p class="contacts__info"></p>
+          </li>
+          <li class="contacts__item">
+            <p class="contacts__title">Пишите:</p>
+            <p class="contacts__info"></p>
+          </li>
+          <li class="contacts__item">
+            <p class="contacts__title">Приезжайте в гости:</p>
+            <p class="contacts__info">ул. Большая <br>
+              Конюшенная, 19/8</p>
+          </li>
+        </ul>
+        <div class="contacts__map">
+          <img src="img/map.png" alt="map">
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="#">
+            <img src="img/glasses.svg" width="59" height="40" alt="logo-glasses">
+            <img src="img/pink.svg" width="74" height="23" alt="Логотип-Пинк">
+          </a>
+        </li>
+        <li class="footer__item">
+          <ul class="socials">
+            <li class="socials-item">
+              <a href=""><img src="img/twitter.svg" width="18" height="14" alt="twitter"></a>
+            </li>
+            <li class="socials-item">
+              <a href=""><img src="img/facebook.svg" width="9" height="18" alt="facebook"></a>
+            </li>
+            <li class="socials-item">
+              <a href=""><img src="img/youtube.svg" width="15" height="13" alt="youtube"></a>
+            </li>
+          </ul>
+        </li>
+        <li class="footer__item">
+          <p>Разработано</p>
+          <a href="#"><img src="img/htmlacademy.svg" width="27" height="34" alt="htmlacademy"></a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
