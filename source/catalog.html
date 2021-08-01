@@ -30,7 +30,7 @@
         </p>
         <ul class="products__list">
           <li class="poducts__item">
-            <img src="img/panorama-tablet.png" width="280" height="192" alt="Канатка">
+            <a href="#"><img src="img/panorama-tablet.png" width="280" height="192" alt="Канатка"></a>
             <p class="products__user-name">
               Анна <time datetime="">(5 минут назад)</time>
             </p>
@@ -43,7 +43,7 @@
             <a class="products__likes" href="#"><img src="img/heart.svg" width="13" height="12" alt="heart">Нравится: 215</a>
           </li>
           <li class="poducts__item">
-            <img src="img/photo-1-mobile.png" width="280" height="180" alt="машина">
+            <a href="#"><img src="img/photo-1-mobile.png" width="280" height="180" alt="машина"></a>
             <p class="products__user-name">
               Левон <time datetime="">(5 часов назад)</time>
             </p>
@@ -53,7 +53,7 @@
             <a class="products__likes" href="#"><img src="img/heart.svg" width="13" height="12" alt="heart">Нравится: 356</a>
           </li>
           <li class="poducts__item">
-            <img src="img/photo-2-mobile.png" width="280" height="180" alt="барабаны">
+            <a href="#"><img src="img/photo-2-mobile.png" width="280" height="180" alt="барабаны"></a>
             <p class="products__user-name">
               Антон <time datetime="">(12 часов назад)</time>
             </p>
@@ -63,7 +63,7 @@
             <a class="products__likes" href="#"><img src="img/heart.svg" width="13" height="12" alt="heart">Нравится: 666</a>
           </li>
           <li class="poducts__item">
-            <img src="img/photo-3-tablet.png" width="280" height="180" alt="небоскреб">
+            <a href="#"><img src="img/photo-3-tablet.png" width="280" height="180" alt="небоскреб"></a>
             <p class="products__user-name">
               Борис <time datetime="">(20 часов назад)</time>
             </p>
@@ -73,7 +73,7 @@
             <a class="products__likes" href="#"><img src="img/heart.svg" width="13" height="12" alt="heart">Нравится: 215</a>
           </li>
           <li class="poducts__item">
-            <img src="img/photo-4-tablet.png" width="280" height="180" alt="кубанская бахча">
+            <a href="#"><img src="img/photo-4-tablet.png" width="280" height="180" alt="кубанская бахча"></a>
             <p class="products__user-name">
               Сергей <time datetime="">(25 часов назад)</time>
             </p>
@@ -83,7 +83,7 @@
             <a class="products__likes" href="#"><img src="img/heart.svg" width="13" height="12" alt="heart">Нравится: 4</a>
           </li>
           <li class="poducts__item">
-            <img src="img/photo-5-tablet.png" width="280" height="180" alt="свисающие ноги">
+            <a href="#"><img src="img/photo-5-tablet.png" width="280" height="180" alt="свисающие ноги"></a>
             <p class="products__user-name">
               Максим <time datetime="">(40 часов назад)</time>
             </p>
@@ -93,7 +93,7 @@
             <a class="products__likes" href="#"><img src="img/heart.svg" width="13" height="12" alt="heart">Нравится: 150</a>
           </li>
           <li class="poducts__item">
-            <img src="img/photo-6-tablet.png" width="280" height="180" alt="закат из самолета">
+            <a href="#"><img src="img/photo-6-tablet.png" width="280" height="180" alt="закат из самолета"></a>
             <p class="products__user-name">
               Надежда <time datetime="">(45 часов назад)</time>
             </p>
@@ -111,20 +111,26 @@
           телефоне!
         </p>
         <img src="img/photo-7-tablet.png" alt="зимняя дорога">
-        <label for="range">
           <ul class="user-content__edit-list">
             <li class="user-content__edit-item user-content__edit-item--chosen">
-              <img src="img/crop.svg" width="44" height="44" alt="crop">
+              <label for="crop">
+                <img src="img/crop.svg" width="44" height="44" alt="crop">
+              </label>
+              <input type="range" name="crop" id="crop">
             </li>
             <li class="user-content__item">
-              <img src="img/fill.svg" width="48" height="43" alt="fill">
+              <label for="fill">
+                <img src="img/fill.svg" width="48" height="43" alt="fill"></label>
+              </label>
+              <input type="range" name="fill" id="fill">
             </li>
             <li class="user-content__item">
-              <img src="img/contrast.svg" width="32" height="32" alt="contrast">
+              <label for="contacts">
+                <img src="img/contrast.svg" width="32" height="32" alt="contrast"></label>
+              </label>
+              <input type="range" name="" id="contacts">
             </li>
           </ul>
-        </label>
-        <input id="range" type="range" min="1" max="10">
         <button class="button button-post" type="submit">
           <span>запостить</span>
         </button>
