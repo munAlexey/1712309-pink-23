@@ -1,0 +1,88 @@
+.main__title {
+  color: $white;
+  margin: 0;
+  padding: 36px 74px 84px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  width: 172px;
+}
+
+.products {
+  background-color: $white;
+}
+
+.products__text {
+  color: $black;
+  text-align: center;
+  margin: 0;
+  padding: 54px 0 60px;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.products__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.products__item {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.products__item a {
+  text-decoration: none;
+}
+
+.products__panorama {
+  position: absolute;
+  top: -14px;
+  right: 20px;
+  text-transform: uppercase;
+  background-color: $red;
+  color: $white;
+  font-weight: 700;
+  padding: 13px 20px;
+}
+
+.products__user-block {
+  background-color: $light-grey;
+  padding-bottom: 26px;
+  margin: -20px auto 20px auto;
+}
+
+.products__user-name {
+  font-weight: 700;
+  padding: 25px 17px;
+  padding-bottom: 0;
+}
+
+.products__user-datetime {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  color: $dark-green;
+}
+
+.products__user-comment {
+  padding: 0 10px 0 17px;
+}
+
+.products__likes {
+  padding-left: 40px;
+  padding-bottom: 26px;
+  position: relative;
+  text-decoration: none;
+  color: $red;
+}
+
+.products__likes::before {
+  content: url("../../img/heart.svg");
+  position: absolute;
+  top: -2px;
+  left: 17px;
+}

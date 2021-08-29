@@ -9,14 +9,42 @@
 
 // blocks index page
 
-@import "../sass/blocks/block-main-header.scss";
-@import "../sass/blocks/block-main-slide.scss";
-@import "../sass/blocks/block-offer.scss";
-@import "../sass/blocks/block-comments.scss";
-@import "../sass/blocks/block-price.scss";
-@import "../sass/blocks/block-contacts.scss";
-@import "../sass/blocks/block-main-footer.scss";
-@import "../sass/blocks/block-products.scss";
-@import "../sass/blocks/block-user-content.scss";
-@import "../sass/blocks/block-form.scss";
+//header
+@import "../sass/blocks/header/block-main-header.scss";
+@import "../sass/blocks/header/block-main-nav.scss";
 
+//main
+//main-slide
+@import "../sass/blocks/block-main-slide.scss";
+@import "../sass/blocks/main/block-main-slide/block-main-info.scss";
+
+//main-offer
+@import "../sass/blocks/block-offer.scss";
+
+//main-comments
+@import "../sass/blocks/block-comments.scss";
+@import "../sass/blocks/main/block-comments/toggle.scss";
+@import "../sass/blocks/main/block-comments/user-comment.scss";
+
+//main-price
+@import "../sass/blocks/main/block-price-list/block-price.scss";
+@import "../sass/blocks/main/block-price-list/block-table.scss";
+
+//block-contacts
+@import "../sass/blocks/block-contacts.scss";
+
+//block-products
+@import "../sass/blocks/block-products.scss";
+
+//block-user-content
+@import "../sass/blocks/main/block-user-content/block-user-content.scss";
+@import "../sass/blocks/main/block-user-content/catalog-btn.scss";
+@import "../sass/blocks/main/block-user-content/create-post.scss";
+
+//block-form
+@import "../sass/blocks/main/block-form/block-form.scss";
+@import "../sass/blocks/main/block-form/checkbox.scss";
+@import "../sass/blocks/main/block-form/radio.scss";
+
+//footer
+@import "../sass/blocks/footer/block-main-footer.scss";

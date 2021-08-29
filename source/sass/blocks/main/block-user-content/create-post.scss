@@ -1,0 +1,32 @@
+.create-post {
+  background-color: $light-grey;
+}
+
+.create-post img {
+  padding-top: 20px;
+}
+
+.create-post__edit-list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  width: 194px;
+}
+
+.create-post__input {
+  display: flex;
+  list-style-type: none;
+  position: relative;
+  border-bottom: 1px solid rgba($dark-green, 0.1);
+  padding-bottom: 34px;
+  margin: 14px 0 0 0;
+
+  &-crop {
+    position: absolute;
+    width: 240px;
+    top: 0;
+    left: 40px;
+  }
+}

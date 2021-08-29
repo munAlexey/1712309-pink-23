@@ -1,0 +1,12 @@
+.tarif {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-list {
+  background-color: $light-grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 49px;
+}

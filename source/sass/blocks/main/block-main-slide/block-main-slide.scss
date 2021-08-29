@@ -1,0 +1,26 @@
+.main-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: -2;
+}
+
+.main-slide__slogan {
+  color: $white;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  text-align: center;
+  padding-top: 28px;
+  padding-bottom: 310px;
+}
+
+.button {
+  background-color: transparent;
+  border: 3px solid $white;
+  padding: 21px 38px;
+  font-size: 18px;
+  line-height: 18px;
+  border-radius: 45px;
+  color: $white;
+}

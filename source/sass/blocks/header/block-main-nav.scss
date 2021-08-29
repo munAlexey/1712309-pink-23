@@ -1,0 +1,49 @@
+.site-nav {
+  height: 255px;
+  display: block;
+  flex-direction: column;
+  position: absolute;
+  left: -40px;
+  top: -14px;
+}
+
+.site-nav__link:hover {
+  color: $red;
+}
+
+.site-nav__link:active {
+  opacity: 0.3;
+}
+
+.site-nav__item:first-child {
+  justify-content: left;
+}
+
+.site-nav__item {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  width: 320px;
+  text-align: center;
+  padding: 25px 0;
+  background: $dark-green;
+  box-shadow: 0 1px 0 $black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.site-nav__link {
+  text-decoration: none;
+  color: $white;
+  text-transform: uppercase;
+  height: 24px;
+}
+
+.site-nav__link img {
+  padding-left: 20px;
+}
+
+.site-nav::after {
+  content: url("../../img/close\ menu\ btn.svg");
+  position: absolute;
+  top: 23px;
+  right: 20px;
+}

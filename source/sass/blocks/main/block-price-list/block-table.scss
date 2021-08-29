@@ -1,0 +1,36 @@
+.table {
+  width: 276px;
+  margin: 0 auto;
+  padding: 40px 0 45px 0;
+}
+
+.table__title {
+  background-color: $dark-green;
+}
+
+.table__title-name {
+  text-transform: uppercase;
+  color: $white;
+}
+
+.table__title-price {
+  color: $white;
+  font-weight: 300;
+  margin: 0;
+}
+
+.table__item {
+  padding-left: 19px;
+  background-color: $white;
+  text-transform: uppercase;
+  font-weight: 300;
+  height: 59px;
+  position: relative;
+}
+
+.table__item::after {
+  content: url("../../img/yes.svg");
+  position: absolute;
+  top: 19px;
+  right: 17px;
+}

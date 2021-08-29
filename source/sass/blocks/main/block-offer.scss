@@ -1,0 +1,57 @@
+.offer__title {
+  text-align: center;
+  background-image: linear-gradient(-186deg, transparent 87.2%, $light-grey 87.2%, $light-grey 100%);
+}
+
+.offer__title-text {
+  display: block;
+  font-size: 24px;
+  line-height: 29px;
+  color: $dark-green;
+  font-weight: 300;
+}
+
+.offer__title-text:first-child {
+  padding-top: 45px;
+  margin-bottom: 36px;
+}
+
+.offer__title-text:last-child {
+  padding-bottom: 53px;
+}
+
+.offer__list {
+  padding: 0;
+  list-style-type: none;
+  background-color: $light-grey;
+}
+
+.offer__item {
+  margin: 0;
+  padding-top: 43px;
+}
+
+.offer__item-title {
+  margin: 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.offer__item-subtitle {
+  margin: 0;
+  padding-top: 24px;
+  text-align: center;
+  color: $dark-green;
+}
+
+.offer__iphone {
+  display: flex;
+  width: 320px;
+  justify-content: center;
+  background-color: $light-grey;
+
+  &--drop-shadow {
+    padding-top: 48px;
+  }
+}
