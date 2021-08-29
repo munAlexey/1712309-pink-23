@@ -1,0 +1,125 @@
+
+.header {
+  height: 66px;
+  width: 320px;
+  background-color: rgba($color: $black, $alpha: 0.3);
+  position: relative;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: flex-end;
+
+  &__logo {
+    padding: 20px;
+    margin-right: auto;
+  }
+
+  &__toggle {
+    position: relative;
+    border-radius: 45px;
+    border: none;
+    width: 50px;
+    height: 24px;
+    margin: 20px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
+
+.header-nav__toggle span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 4px;
+  background-color: $white;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 10px;
+    right: 0;
+    width: 50px;
+    height: 4px;
+    background-color: $white;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 20px;
+    right: 0;
+    width: 50px;
+    height: 4px;
+    background-color: $white;
+  }
+}
+
+.header-nav__toggle span:hover {
+  background-color: $red;
+
+  &:hover::before,
+  &:hover::after {
+    background-color: $red;
+  }
+}
+
+.header-nav__toggle span:active {
+  opacity: 0.3;
+
+  &:active::before,
+  &:active::after {
+    opacity: 0.3;
+  }
+}
+
+.site-nav {
+  height: 255px;
+  display: block;
+  flex-direction: column;
+  position: absolute;
+  left: -40px;
+  top: -14px;
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    width: 320px;
+    text-align: center;
+    padding: 25px 0;
+    background: $dark-green;
+    box-shadow: 0 1px 0 $black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  }
+
+  &__link:hover {
+    color: $red;
+  }
+
+  &__link:active {
+    opacity: 0.3;
+  }
+
+  &__item:first-child {
+    justify-content: left;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $white;
+    text-transform: uppercase;
+    height: 24px;
+  }
+
+  &__link img {
+    padding-left: 20px;
+  }
+}
+
+.site-nav::after {
+  content: url("../../img/close\ menu\ btn.svg");
+  position: absolute;
+  top: 23px;
+  right: 20px;
+}

@@ -3,166 +3,205 @@
   <head>
     <meta charset="utf-8">
     <title>Фотографии</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="page-body">
-    <header class="header">
+  <body class="page-body wrapper-contacts">
+    <header class="header container">
       <nav class="header-nav">
         <div class="header-nav__logo">
-          <a href="index.html"><img src="img/pink.svg" width="74" height="23" alt="Логотип-Пинк"></a>
+          <a><img src="img/pink.svg" width="74" height="23" alt="Логотип-Пинк"></a>
         </div>
         <button class="header-nav__toggle" type="button">
-          <span>Открыть меню</span>
+          <span></span>
         </button>
-        <ul class="site-nav__list">
-          <li class="site-nav__item"><a href="index.html">главная</a></li>
-          <li class="site-nav__item"><a href="#">фотографии</a></li>
-          <li class="site-nav__item"><a href="#">конкурс</a></li>
-          <li class="site-nav__item"><a href="#">html academy</a></li>
-        </ul>
+        <div class="modal">
+          <ul class="site-nav">
+            <li class="site-nav__item"><a class="site-nav__link" href="index.html"><img src="img/pink.svg" width="74" height="23" alt="Логотип-Пинк"></a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="index.html">главная</a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">фотографии</a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="form.html">конкурс</a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="#">html academy</a></li>
+          </ul>
+        </div>
       </nav>
-    </header>
-    <main class="main">
-      <h1>Фотографии пользователей</h1>
+  </header>
+    <main class="main container">
+      <h1 class="main__title">Фотографии пользователей</h1>
       <section class="products">
         <p class="products__text">Взгляните на фотографии, которые <br>
           выкладывают пользователи! <br>
           Видите, как не хватает ваших?
         </p>
         <ul class="products__list">
-          <li class="poducts__item">
-            <a href="#"><img src="img/panorama-tablet.png" width="280" height="192" alt="Канатка"></a>
-            <p class="products__user-name">
-              Анна <time datetime="">(5 минут назад)</time>
-            </p>
-            <p class="products__user-comment">
-              Прыгать или нет? Напишите в
-              комментарии свой совет и
-              смотрите прямую трансляцию в
-              перископе, задавайте свои вопросы!
-            </p>
-            <a class="products__likes" href="#"><img src="img/heart.svg" width="13" height="12" alt="heart">Нравится: 215</a>
+          <li class="products__item">
+            <a href="#">
+              <p class="products__panorama">ПАНОРАМА ДНЯ</p>
+              <img src="img/panorama-tablet.png" width="320" height="137" alt="Канатка"></a>
+            <div class="products__user-block wrapper-photo">
+              <p class="products__user-name">
+                Анна <span class="products__user-datetime"><time datetime="">(5 минут назад)</time></span>
+              </p>
+              <p class="products__user-comment">
+                Прыгать или нет? Напишите в
+                комментарии свой совет и
+                смотрите прямую трансляцию в
+                перископе, задавайте свои вопросы!
+              </p>
+              <a class="products__likes" href="#">Нравится: 215</a>
+            </div>
           </li>
-          <li class="poducts__item">
+          <li class="poducts__item wrapper-photo">
             <a href="#"><img src="img/photo-1-mobile.png" width="280" height="180" alt="машина"></a>
-            <p class="products__user-name">
-              Левон <time datetime="">(5 часов назад)</time>
-            </p>
-            <p class="products__user-comment">
-              Вчера он на луну летал, сегодня в руки к нам попал.
-            </p>
-            <a class="products__likes" href="#"><img src="img/heart.svg" width="13" height="12" alt="heart">Нравится: 356</a>
+            <div class="products__user-block">
+              <p class="products__user-name">
+                Левон <span class="products__user-datetime"><time datetime="">(5 часов назад)</time></span>
+              </p>
+              <p class="products__user-comment">
+                Вчера он на луну летал, сегодня в руки к нам попал.
+              </p>
+              <a class="products__likes" href="#">Нравится: 356</a>
+            </div>
           </li>
-          <li class="poducts__item">
+          <li class="poducts__item wrapper-photo">
             <a href="#"><img src="img/photo-2-mobile.png" width="280" height="180" alt="барабаны"></a>
-            <p class="products__user-name">
-              Антон <time datetime="">(12 часов назад)</time>
-            </p>
-            <p class="products__user-comment">
-              Соседи будут рады!
-            </p>
-            <a class="products__likes" href="#"><img src="img/heart.svg" width="13" height="12" alt="heart">Нравится: 666</a>
+            <div class="products__user-block">
+              <p class="products__user-name">
+                Антон <time datetime="">(12 часов назад)</time>
+              </p>
+              <p class="products__user-comment">
+                Соседи будут рады!
+              </p>
+              <a class="products__likes" href="#">Нравится: 666</a>
+            </div>
           </li>
-          <li class="poducts__item">
+          <li class="poducts__item wrapper-photo">
             <a href="#"><img src="img/photo-3-tablet.png" width="280" height="180" alt="небоскреб"></a>
-            <p class="products__user-name">
-              Борис <time datetime="">(20 часов назад)</time>
-            </p>
-            <p class="products__user-comment">
-              Здесь могла быть ваша цитата о высоком и вечном.
-            </p>
-            <a class="products__likes" href="#"><img src="img/heart.svg" width="13" height="12" alt="heart">Нравится: 215</a>
+            <div class="products__user-block">
+              <p class="products__user-name">
+                Борис <span class="products__user-datetime"><time datetime="">(20 часов назад)</time>
+              </p>
+              <p class="products__user-comment">
+                Здесь могла быть ваша цитата о высоком и вечном.
+              </p>
+              <a class="products__likes" href="#">
+                Нравится: 215
+              </a>
+            </div>
           </li>
-          <li class="poducts__item">
+          <li class="poducts__item wrapper-photo">
             <a href="#"><img src="img/photo-4-tablet.png" width="280" height="180" alt="кубанская бахча"></a>
+            <div class="products__user-block">
             <p class="products__user-name">
-              Сергей <time datetime="">(25 часов назад)</time>
+              Сергей <span class="products__user-datetime"><time datetime="">(25 часов назад)</time>
             </p>
             <p class="products__user-comment">
               Самая кубанская в мире!
             </p>
-            <a class="products__likes" href="#"><img src="img/heart.svg" width="13" height="12" alt="heart">Нравится: 4</a>
+            <a class="products__likes" href="#">Нравится: 4</a>
+            </div>
           </li>
-          <li class="poducts__item">
+          <li class="poducts__item wrapper-photo">
             <a href="#"><img src="img/photo-5-tablet.png" width="280" height="180" alt="свисающие ноги"></a>
+            <div class="products__user-block">
             <p class="products__user-name">
-              Максим <time datetime="">(40 часов назад)</time>
+              Максим <span class="products__user-datetime"><time datetime="">(40 часов назад)</time>
             </p>
             <p class="products__user-comment">
               Где снег-то?
             </p>
-            <a class="products__likes" href="#"><img src="img/heart.svg" width="13" height="12" alt="heart">Нравится: 150</a>
+            <a class="products__likes" href="#">Нравится: 150</a>
+            </div>
           </li>
-          <li class="poducts__item">
+          <li class="poducts__item wrapper-photo">
             <a href="#"><img src="img/photo-6-tablet.png" width="280" height="180" alt="закат из самолета"></a>
+            <div class="products__user-block">
             <p class="products__user-name">
-              Надежда <time datetime="">(45 часов назад)</time>
+              Надежда <span class="products__user-datetime"><time datetime="">(45 часов назад)</time>
             </p>
             <p class="products__user-comment">
               Всем GM и взаимные лайки!
             </p>
-            <a class="products__likes" href="#"><img src="img/heart.svg" width="13" height="12" alt="heart">Нравится: 2560</a>
+            <a class="products__likes" href="#">Нравится: 2560</a>
+            </div>
           </li>
         </ul>
       </section>
-      <section class="user-content">
+      <section class="user-content container">
         <p class="user-content__slogan">
           Затмите их всех! <br>
           Выкладывайте все, что накопилось в <br>
           телефоне!
         </p>
-        <img src="img/photo-7-tablet.png" alt="зимняя дорога">
-          <ul class="user-content__edit-list">
-            <li class="user-content__edit-item user-content__edit-item--chosen">
+        <div class="create-post container">
+          <img src="img/photo-7-tablet.png" alt="зимняя дорога">
+          <ul class="create-post__edit-list">
+            <li class="create-post__edit-item create-post__edit-item--chosen">
               <label for="crop">
                 <img src="img/crop.svg" width="44" height="44" alt="crop">
               </label>
-              <input type="range" name="crop" id="crop">
             </li>
-            <li class="user-content__item">
+            <li class="create-post__edit-item">
               <label for="fill">
                 <img src="img/fill.svg" width="48" height="43" alt="fill"></label>
               </label>
-              <input type="range" name="fill" id="fill">
             </li>
-            <li class="user-content__item">
-              <label for="contacts">
+            <li class="create-post__edit-item">
+              <label for="contrast">
                 <img src="img/contrast.svg" width="32" height="32" alt="contrast"></label>
               </label>
-              <input type="range" name="" id="contacts">
             </li>
           </ul>
-        <button class="button button-post" type="submit">
-          <span>запостить</span>
-        </button>
-        <button class="button button-cancel" type="button">
-          <span>отмена</span>
-        </button>
+          <ul class="create-post__input">
+            <li>
+              <input class="create-post__input-crop" type="range" name="crop" id="crop">
+            <li>
+              <input class="create-post__input-crop" type="range" name="fill" id="fill">
+            </li>
+            <li>
+              <input class="create-post__input-crop" type="range" name="contrast" id="contrast">
+            </li>
+          </ul>
+          <div class="button-catalog">
+            <button class="button button-catalog__post" type="submit">
+              <span>запостить</span>
+            </button>
+            <button class="button button-catalog__cancel" type="button">
+              <span>отмена</span>
+            </button>
+          </div>
+        </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer container">
       <ul class="footer__list">
         <li class="footer__item">
-          <a href="#">
+          <a href="#" class="footer__link">
             <img src="img/glasses.svg" width="59" height="40" alt="logo-glasses">
-            <img src="img/pink.svg" width="74" height="23" alt="Логотип-Пинк">
+            <img src="img/pink-black.svg" width="74" height="23" alt="Логотип-Пинк">
           </a>
         </li>
         <li class="footer__item">
           <ul class="socials">
             <li class="socials__item">
-              <a href=""><img src="img/twitter.svg" width="18" height="14" alt="twitter"></a>
+              <a href="#" class="socials__link">
+                <img src="img/twitter.svg" width="18" height="14" alt="twitter">
+              </a>
             </li>
             <li class="socials__item">
-              <a href=""><img src="img/facebook.svg" width="9" height="18" alt="facebook"></a>
+              <a href="#" class="socials__link">
+                <img src="img/facebook.svg" width="9" height="18" alt="facebook">
+              </a>
             </li>
             <li class="socials__item">
-              <a href=""><img src="img/youtube.svg" width="15" height="13" alt="youtube"></a>
+              <a href="#" class="socials__link">
+                <img src="img/youtube.svg" width="15" height="13" alt="youtube">
+              </a>
             </li>
           </ul>
         </li>
-        <li class="footer__item">
+        <li class="footer__item copyright">
           <p>Разработано</p>
-          <a href="#"><img src="img/htmlacademy.svg" width="27" height="34" alt="htmlacademy"></a>
+          <a href="#"><img src="img/html academy-red.svg" width="27" height="34" alt="htmlacademy"></a>
         </li>
       </ul>
     </footer>

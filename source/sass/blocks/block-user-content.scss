@@ -1,0 +1,91 @@
+.user-content {
+  text-align: center;
+
+  &__slogan {
+    font-size: 14px;
+    line-height: 30px;
+    margin: 44px auto 52px auto;
+  }
+}
+
+.create-post {
+  background-color: $light-grey;
+
+  & img {
+    padding-top: 20px;
+  }
+
+  &__edit-list {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 194px;
+  }
+
+  &__input {
+    display: flex;
+    list-style-type: none;
+    position: relative;
+    border-bottom: 1px solid rgba($dark-green, 0.1);
+    padding-bottom: 34px;
+    margin: 14px 0 0 0;
+
+    &-crop {
+      position: absolute;
+      width: 240px;
+      top: 0;
+      left: 40px;
+    }
+  }
+}
+
+.button-catalog {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 38px auto;
+
+  &__post {
+    color: $red;
+    border: 3px solid $red;
+    box-sizing: border-box;
+    border-radius: 30px;
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  &__post:hover {
+    background-color: $red;
+    color: $white;
+  }
+
+  &__post:active {
+    color: rgba($white, 0.3);
+  }
+
+  &__cancel {
+    color: rgba($dark-green, 0.1);
+    border: 3px solid rgba($dark-green, 0.1);
+    box-sizing: border-box;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 41px;
+  }
+
+  &__cancel:hover {
+    color: rgba($dark-green, 0.3);
+    border: 3px solid rgba($dark-green, 0.3);
+  }
+
+  &__cancel:active {
+    background-color: rgba($dark-green, 0.3);
+    border: 3px solid rgba($dark-green, 0.1);
+    color: rgba($white, 0.3);
+  }
+}

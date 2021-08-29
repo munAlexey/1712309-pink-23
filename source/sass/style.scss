@@ -1,1 +1,22 @@
 // Начните писать стили здесь
+
+// global
+
+@import "normalize.scss";
+@import "../sass/global.scss";
+@import "../sass/variables.scss";
+@import "../sass/fonts.scss";
+
+// blocks index page
+
+@import "../sass/blocks/block-main-header.scss";
+@import "../sass/blocks/block-main-slide.scss";
+@import "../sass/blocks/block-offer.scss";
+@import "../sass/blocks/block-comments.scss";
+@import "../sass/blocks/block-price.scss";
+@import "../sass/blocks/block-contacts.scss";
+@import "../sass/blocks/block-main-footer.scss";
+@import "../sass/blocks/block-products.scss";
+@import "../sass/blocks/block-user-content.scss";
+@import "../sass/blocks/block-form.scss";
+
